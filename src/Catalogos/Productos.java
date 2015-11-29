@@ -11,7 +11,7 @@ import java.sql.*;
 import java.util.Vector;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-
+import Reportes.Reporte_Productos2;
 
 
 /**
@@ -52,6 +52,7 @@ public class Productos extends javax.swing.JFrame {
         btn_editar = new javax.swing.JButton();
         btn_eliminar = new javax.swing.JButton();
         btn_refrescar = new javax.swing.JButton();
+        btn_imprimir = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tableProductos = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
@@ -160,6 +161,17 @@ public class Productos extends javax.swing.JFrame {
         });
         jToolBar1.add(btn_refrescar);
 
+        btn_imprimir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Print2.png"))); // NOI18N
+        btn_imprimir.setFocusable(false);
+        btn_imprimir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_imprimir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btn_imprimir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_imprimirActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(btn_imprimir);
+
         tableProductos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null},
@@ -203,17 +215,17 @@ public class Productos extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 613, Short.MAX_VALUE))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 938, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(text_patron, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btn_ok, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btn_ok, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -388,6 +400,11 @@ public class Productos extends javax.swing.JFrame {
         btn_ok.doClick();
     }//GEN-LAST:event_btn_refrescarActionPerformed
 
+    private void btn_imprimirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_imprimirActionPerformed
+        // TODO add your handling code here:
+        new Reporte_Productos2();
+    }//GEN-LAST:event_btn_imprimirActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -426,6 +443,7 @@ public class Productos extends javax.swing.JFrame {
     private javax.swing.JButton btn_anterior;
     private javax.swing.JButton btn_editar;
     private javax.swing.JButton btn_eliminar;
+    private javax.swing.JButton btn_imprimir;
     private javax.swing.JButton btn_nuevo;
     private javax.swing.JButton btn_ok;
     private javax.swing.JButton btn_primero;
