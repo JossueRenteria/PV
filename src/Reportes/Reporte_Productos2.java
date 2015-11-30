@@ -17,11 +17,15 @@ import Utilerias.Conexion;
 public class Reporte_Productos2 {
     public Reporte_Productos2(){
         Conexion con = new Conexion();
-        String orden_sql = "SELECT id, codigo, nombre, "
-                + "precio_costo, precio_venta, stock, "
-                + "Linea_id, Proveedor_id "
+        String orden_sql = "SELECT Producto.id, Producto.codigo, "
+                + "Producto.nombre, Producto.precio_costo, "
+                + "Producto.precio_venta, Producto.stock, "
+                + "(Linea.nombre) as Linea, Proveedor.razon_social "
                 + "FROM Producto "
-                + "ORDER BY id";
+                + "INNER JOIN Linea "
+                + "ON Producto.Linea_id = Linea.id "
+                + "INNER JOIN Proveedor "
+                + "ON Producto.id = Proveedor.id";
         try{
             con.Open();
             con.EjecutarSQL(orden_sql);

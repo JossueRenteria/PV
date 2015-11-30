@@ -63,7 +63,7 @@ public class Producto extends javax.swing.JFrame {
 
         jLabel2.setText("Nombre");
 
-        btn_aceptar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Catalogos/GuardarTodo.png"))); // NOI18N
+        btn_aceptar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/GuardarTodo.png"))); // NOI18N
         btn_aceptar.setText("Aceptar");
         btn_aceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,7 +71,7 @@ public class Producto extends javax.swing.JFrame {
             }
         });
 
-        btn_cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Catalogos/Cancelar.png"))); // NOI18N
+        btn_cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Cancelar.png"))); // NOI18N
         btn_cancelar.setText("Cancelar");
         btn_cancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,7 +103,6 @@ public class Producto extends javax.swing.JFrame {
             }
         });
 
-        combo_proveedor.setToolTipText("null");
         combo_proveedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 combo_proveedorActionPerformed(evt);
@@ -318,6 +317,8 @@ public class Producto extends javax.swing.JFrame {
         text_costo.setEditable(estado);
         text_venta.setEditable(estado);
         text_stock.setEditable(estado);
+        combo_linea.setEditable(estado);
+        combo_proveedor.setEditable(estado);
     }
     public void cargarCampos(String id){
         enlace.EjecutarSQL("SELECT * FROM Producto WHERE id="+id);

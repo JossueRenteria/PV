@@ -65,7 +65,7 @@ public class Productos extends javax.swing.JFrame {
 
         jToolBar1.setRollover(true);
 
-        btn_primero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Catalogos/First.png"))); // NOI18N
+        btn_primero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/First.png"))); // NOI18N
         btn_primero.setToolTipText("ir al primer registro");
         btn_primero.setFocusable(false);
         btn_primero.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -77,7 +77,7 @@ public class Productos extends javax.swing.JFrame {
         });
         jToolBar1.add(btn_primero);
 
-        btn_anterior.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Catalogos/Anterior.png"))); // NOI18N
+        btn_anterior.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Anterior.png"))); // NOI18N
         btn_anterior.setToolTipText("ir al anterior");
         btn_anterior.setFocusable(false);
         btn_anterior.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -89,7 +89,7 @@ public class Productos extends javax.swing.JFrame {
         });
         jToolBar1.add(btn_anterior);
 
-        btn_siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Catalogos/Next.png"))); // NOI18N
+        btn_siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Next.png"))); // NOI18N
         btn_siguiente.setToolTipText("ir al siguiente");
         btn_siguiente.setFocusable(false);
         btn_siguiente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -101,7 +101,7 @@ public class Productos extends javax.swing.JFrame {
         });
         jToolBar1.add(btn_siguiente);
 
-        btn_ultimo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Catalogos/End.png"))); // NOI18N
+        btn_ultimo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/End.png"))); // NOI18N
         btn_ultimo.setToolTipText("ir al ultimo");
         btn_ultimo.setFocusable(false);
         btn_ultimo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -113,7 +113,7 @@ public class Productos extends javax.swing.JFrame {
         });
         jToolBar1.add(btn_ultimo);
 
-        btn_nuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Catalogos/Nuevo.png"))); // NOI18N
+        btn_nuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Nuevo.png"))); // NOI18N
         btn_nuevo.setToolTipText("nuevo registro");
         btn_nuevo.setFocusable(false);
         btn_nuevo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -125,7 +125,7 @@ public class Productos extends javax.swing.JFrame {
         });
         jToolBar1.add(btn_nuevo);
 
-        btn_editar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Catalogos/Editar.png"))); // NOI18N
+        btn_editar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Editar.png"))); // NOI18N
         btn_editar.setToolTipText("editar registro");
         btn_editar.setFocusable(false);
         btn_editar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -137,7 +137,7 @@ public class Productos extends javax.swing.JFrame {
         });
         jToolBar1.add(btn_editar);
 
-        btn_eliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Catalogos/Baja.png"))); // NOI18N
+        btn_eliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Baja.png"))); // NOI18N
         btn_eliminar.setToolTipText("eliminar registro");
         btn_eliminar.setFocusable(false);
         btn_eliminar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -149,7 +149,7 @@ public class Productos extends javax.swing.JFrame {
         });
         jToolBar1.add(btn_eliminar);
 
-        btn_refrescar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Catalogos/refresh.png"))); // NOI18N
+        btn_refrescar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/refresh.png"))); // NOI18N
         btn_refrescar.setToolTipText("refrescar");
         btn_refrescar.setFocusable(false);
         btn_refrescar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
