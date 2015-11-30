@@ -317,8 +317,8 @@ public class Producto extends javax.swing.JFrame {
         text_costo.setEditable(estado);
         text_venta.setEditable(estado);
         text_stock.setEditable(estado);
-        combo_linea.setEditable(estado);
-        combo_proveedor.setEditable(estado);
+        //combo_linea.setEditable(estado);
+        //combo_proveedor.setEditable(estado);
     }
     public void cargarCampos(String id){
         enlace.EjecutarSQL("SELECT * FROM Producto WHERE id="+id);
